@@ -8,7 +8,6 @@
     android:padding="20dp"
     tools:context=".DetailFragment">
     <TextView
-        android:layout_marginTop="150px"
         android:id="@+id/coffee_title"
         android:textStyle="bold"
         android:gravity="center"

@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ListFragment"
+    tools:context=".CafeFragment"
     android:padding="20dp">
     <LinearLayout
         android:layout_width="match_parent"
@@ -13,7 +13,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="30sp"
-            android:text="@string/coffee_list"/>
+            android:text="@string/cafe_list"/>
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
@@ -24,18 +24,18 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="10dp"
-            android:text="@string/affogato_title"/>
+            android:text="@string/starbucks_title"/>
         <TextView
             android:id="@+id/americano"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="10dp"
-            android:text="@string/americano_title"/>
+            android:text="@string/janjijiwa_title"/>
         <TextView
             android:id="@+id/latte"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="10dp"
-            android:text="@string/latte_title"/>
+            android:text="@string/kopikenangan_title"/>
     </LinearLayout>
 </ScrollView>
