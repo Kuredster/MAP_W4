@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
 //and adding them to the draw
         appBarConfiguration = AppBarConfiguration(
             setOf(
-                R.id.listFragment, R.id.favoritesFragment, R.id.cafeFragment
+                R.id.listFragment, R.id.favouritesFragment, R.id.cafeFragment
             ), findViewById(R.id.drawer_layout)
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
