@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
             ), findViewById(R.id.drawer_layout)
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
-        findViewById<NavigationView>(R.id.nav_view)
+        findViewById <NavigationView>(R.id.nav_view)
             ?.setupWithNavController(navController)
 // Added this part only
         findViewById<BottomNavigationView>(R.id.bottom_nav)
