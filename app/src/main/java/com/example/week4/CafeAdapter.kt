@@ -6,25 +6,28 @@ import androidx.fragment.app.FragmentManager
 import androidx.lifecycle.Lifecycle
 import androidx.viewpager2.adapter.FragmentStateAdapter
 
-val TABS_CONTENT_FIXED = listOf(
+val cafeDescriptions = listOf(
     R.string.starbucks_desc,
     R.string.janjijiwa_desc,
     R.string.kopikenangan_desc,
 )
 
-val TABS_FIXED = listOf(
+val cafeTitles = listOf(
     R.string.starbucks_title,
     R.string.janjijiwa_title,
     R.string.kopikenangan_title,
 )
 
-class CafeAdapter(private val context: Context, fragmentManager: FragmentManager, lifecycle: Lifecycle) : FragmentStateAdapter(fragmentManager, lifecycle) {
+class CafePagerAdapter(
+    private val appContext: Context,
+    fragmentManager: FragmentManager,
+    lifecycle: Lifecycle
+) : FragmentStateAdapter(fragmentManager, lifecycle) {
 
-    override fun getItemCount(): Int {
-        return TABS_FIXED.size
-    }
-    override fun createFragment(position: Int): Fragment
-    {
-        return CafeDetailFragment.newInstance(context.getString(TABS_CONTENT_FIXED[position]))
+    override fun getItemCount(): Int = cafeTitles.size
+
+    override fun createFragment(position: Int): Fragment {
+        val description = appContext.getString(cafeDescriptions[position])
+        return CafeDetailFragment.newInstance(description)
     }
 }
